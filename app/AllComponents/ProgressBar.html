@@ -1,0 +1,60 @@
+<div class="container">
+    <div><h4>Angular 2 directive for progress bar</h4></div>
+    <div class="parDiv">
+        <div [ngStyle]="myStyle"></div>
+    </div>
+    <button (click)="increment();">increment</button>
+    <button (click)="decrement();">decrement</button>
+
+   <hr/>
+    <div [ngClass]="blue">Color is set to blue using ngClass directive</div>
+    <div [style.color]="'orange'">style using property syntax</div>
+    <div [className]="'blue'">css class using property syntax</div>
+    <hr/>
+
+    <label for="modelTest1">2 Way Binding Test</label>
+     <input type="text" id="modelTest1" [(ngModel)]="mdl2way">
+    Value: {{mdl2way}}
+
+    <hr/>
+
+    <label for="modelTest2">1 Way Binding Test</label>
+    <input type="text" id="modelTest2" [ngModel]="mdl1way">
+    Value: {{mdl1way}}
+
+    <hr/>
+
+    <h4>Angular Click Test</h4>
+    <input type="button" value="ng2Click" (click)="ng2ClickTest();" >
+
+    <hr/>
+
+    <div> <span> BirthDay Date: {{todayDate|date}}</span></div>
+
+    <hr/>
+
+    <div>
+     <button class="btn btn-primary" (click)="respCall();"> Get Response</button>
+        <hr/>
+    <div *ngIf="showTable">
+        <table class="table-striped">
+            <thead>
+                <td>User Id</td>
+                <td>Id</td>
+                <td>title</td>
+                <td>body</td>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let val of jsonResponse">
+                    <td>{{val.userId}}</td>
+                    <td>{{val.id}}</td>
+                    <td>{{val.title}}</td>
+                    <td>{{val.body}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    </div>
+</div>

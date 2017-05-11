@@ -1,0 +1,1 @@
+{"version":3,"file":"lazyRootModule.js","sourceRoot":"","sources":["lazyRootModule.ts"],"names":[],"mappings":";;;;;;;;AAAA;;GAEG;AACH,sCAAsC;AACtC,iDAA6C;AAC7C,2CAAuC;AASvC,IAAa,cAAc;IAA3B;IAA4B,CAAC;IAAD,qBAAC;AAAD,CAAC,AAA7B,IAA6B;AAAhB,cAAc;IAN1B,eAAQ,CAAC;QACN,OAAO,EAAC,CAAC,uBAAU,CAAC;QACpB,YAAY,EAAC,CAAC,6BAAa,CAAC;KAC/B,CAAC;GAGW,cAAc,CAAE;AAAhB,wCAAc"}

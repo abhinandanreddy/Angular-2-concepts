@@ -1,0 +1,18 @@
+<!--<script src="../app.module.ts"></script>-->
+<div class="container">
+
+    <button (click)="callMethodOnChild();" >call method on child</button>
+    <hr/>
+    <div *ngFor=" let book of books" style="margin:5px 0px 5px 0px;" class="booksBorder">
+        <div>
+            <div><span><button class="btn btn-primary btn-group-sm" (click)="tog(book);">{{book.name}}</button></span></div>
+            <div [hidden]="book.show">
+                   <chd [bookObj]="book" (invokeParent)="invokeFunPar($event)"></chd>
+                <div><span>Clicked On : {{mess}}</span></div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

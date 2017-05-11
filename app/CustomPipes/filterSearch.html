@@ -1,0 +1,11 @@
+<div class="container">
+
+    <label class="form-group"> Serach Item</label>
+    <input type="text" [(ngModel)]="searchItem" class="form-control">
+
+    <div *ngFor="let user of objs | filter1:searchItem">
+          <h4>{{user.name}} {{user.location}}</h4>
+    </div>
+
+
+</div>

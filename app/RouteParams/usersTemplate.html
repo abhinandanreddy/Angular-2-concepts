@@ -1,0 +1,9 @@
+<div>
+    <h3>Route Params Example</h3>
+    <ul class="list-group-item-success">
+        <li *ngFor="let user of users" (click)="navigateTo(user)">
+            <span class="badge" >{{user.id}}</span>{{user.name}}
+        </li>
+    </ul>
+
+</div>
